@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Website</title>
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+    <div class="container">
+     <div id="new">
+        <h2>Select Payment Method</h2>
+        <div id = "iop" class="payment-methods">
+            <div class="payment-method" onclick="selectPayment('credit_card')">
+                <img src="visa.png" alt="Credit Card">
+                <p>Credit Card</p>
+            </div>
+            <div class="payment-method" onclick="selectPayment('UPI')">
+                <img src="upi.jpg" alt="UPI">
+                <p>UPI</p>
+            </div>
+            <div class="payment-method" onclick="selectPayment('google_pay')">
+                <img src="gpay.jpg" alt="Google Pay">
+                <p>Google Pay</p>
+            </div>
+        </div>
+        <br>
+       
+        <div id="payment-details" class="payment-details"></div>
+        <div id="credit-card-form" class="credit-card-form">
+            <h3>Enter Credit Card Details</h3>
+            <input type="text" id="card-number" placeholder="Card Number">
+            <input type="text" id="expiry-date" placeholder="Expiry Date (MM/YYYY)">
+            <input type="text" id="cvv" placeholder="CVV">
+         <div id="red1" class="red">  <button onclick="submitCreditCardPayment()">Submit Payment</button></div> 
+        </div>
+        <div id="upi-qr" class="upi-qr">
+            <h3>Scan to Pay with UPI</h3>
+         <center>   <img src="upiqr.png" alt="UPI QR Code" class="qr-code" ></center>
+            <br><br>
+         <div id ="red2"class="red">  <button onclick="submitUPIPayment()">Submit Payment</button></div> 
+        </div>
+        <div id="gpay-qr" class="gpay-qr">
+            <h3>Scan to Pay with Google Pay</h3>
+          <center>  <img src="gpayqr.png" alt="Google Pay QR Code" class="qr-code"></center>
+            <br><br>
+           <div id="red3" class="red"> <button onclick="submitGooglePayPayment()">Submit Payment</button></div>
+        </div>
+        <div id="timer" class="timer"></div>
+    </div>
+        <div id="loading" class="loading-container"></div>
+        <div id="submit-button" class="submit-btn">
+            <br>
+            <button onclick="redirectToAnotherPage()">Proceed</button>
+        </div>
+    </div>
+
+    <script>
+        let timerSeconds = 120; 
+        let timerInterval;
+
+        function selectPayment(method) {
+            document.querySelectorAll('.credit-card-form, .upi-qr, .gpay-qr').forEach(function(element) {
+                element.style.display = 'none';
+            });
+
+            clearInterval(timerInterval); 
+
+            let paymentDetails = '';
+            switch (method) {
+                case 'credit_card':
+                    document.getElementById('credit-card-form').style.display = 'block';
+                    paymentDetails = 'You have selected Credit Card payment method.';
+                    startTimer();
+                    break;
+                case 'UPI':
+                    document.getElementById('upi-qr').style.display = 'block';
+                    paymentDetails = 'You have selected UPI payment method.';
+                    startTimer();
+                    break;
+                case 'google_pay':
+                    document.getElementById('gpay-qr').style.display = 'block';
+                    paymentDetails = 'You have selected Google Pay payment method.';
+                    startTimer();
+                    break;
+                default:
+                    paymentDetails = 'Invalid payment method.';
+            }
+            document.getElementById('payment-details').innerHTML = paymentDetails;
+        }
+
+        function startTimer() {
+            timerSeconds = 120;
+            let timerDisplay = document.getElementById('timer');
+            timerDisplay.innerHTML = 'Time left: ' + timerSeconds + 's';
+            timerInterval = setInterval(function() {
+                timerSeconds--;
+                timerDisplay.innerHTML = 'Time left: ' + timerSeconds + 's';
+                if (timerSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    timerDisplay.innerHTML = 'Time expired!';
+                    document.getElementById('submit-button').style.display = 'block';
+                }
+            }, 1000);
+        }
+
+        function submitCreditCardPayment() {
+            clearInterval(timerInterval); 
+            let loadingDiv = document.getElementById('loading');
+            let submitDiv = document.getElementById('red2');
+            let pvyDiv = document.getElementById('new');
+            loadingDiv.innerHTML = '<div class="loading-circle"></div>';
+            setTimeout(function() {
+                loadingDiv.innerHTML = '';
+                pvyDiv.innerHTML = '<center><h2>Payment Successful</h2></center><br><center> <img src="success.svg" alt="Payment success" class="qr-code" ></center>' ;
+                document.getElementById('submit-button').style.display = 'block';
+                document.querySelector('.red').innerHTML = "";
+            }, 5000); 
+        }
+
+        function submitUPIPayment() {
+            clearInterval(timerInterval); 
+            let loadingDiv = document.getElementById('loading');
+            let submitDiv = document.getElementById('red2');
+            let pvyDiv = document.getElementById('new');
+            loadingDiv.innerHTML = '<div class="loading-circle"></div>';
+            setTimeout(function() {
+                loadingDiv.innerHTML = '';
+                pvyDiv.innerHTML = '<center><h2>Payment Successful</h2></center><br><center> <img src="success.svg" alt="Payment success" class="qr-code" ></center>' ;
+                document.getElementById('submit-button').style.display = 'block';
+                document.querySelector('.red').innerHTML = "";
+            }, 5000); 
+        }
+
+        function submitGooglePayPayment() {
+            clearInterval(timerInterval); 
+            let loadingDiv = document.getElementById('loading');
+            let submitDiv = document.getElementById('red2');
+            let pvyDiv = document.getElementById('new');
+            loadingDiv.innerHTML = '<div class="loading-circle"></div>';
+            setTimeout(function() {
+                loadingDiv.innerHTML = '';
+                pvyDiv.innerHTML = '<center><h2>Payment Successful</h2></center><br><center> <img src="success.svg" alt="Payment success" class="qr-code" ></center>' ;
+                document.getElementById('submit-button').style.display = 'block';
+                document.querySelector('.red').innerHTML = "";
+            }, 5000); 
+        }
+
+        function redirectToAnotherPage() {
+            window.location.href = '/orderstatus';
+        }
+    </script>
+</body>
+</html>

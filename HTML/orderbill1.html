@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magic Moments</title>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="orderbill1.css">
+
+
+
+<script>
+
+var $window           = $(window),
+    win_height_padded = $window.height() * 1.1,
+    isTouch           = Modernizr.touch;
+
+$window.on('scroll', revealOnScroll);
+
+function revealOnScroll() {
+  var scrolled = $window.scrollTop();
+  $(".revealOnScroll:not(.animated)").each(function () {
+    var $this     = $(this),
+        offsetTop = $this.offset().top;
+
+    if (scrolled + win_height_padded > offsetTop) {
+      if ($this.data('timeout')) {
+        window.setTimeout(function(){
+          $this.addClass('animated ' + $this.data('animation'));
+        }, parseInt($this.data('timeout'),10));
+      } else {
+        $this.addClass('animated ' + $this.data('animation'));
+      }
+    }
+  });
+}
+
+
+function function1(){
+  document.getElementById("tab-one").setAttribute("type","radio");
+  document.getElementById("tab-two").setAttribute("type","radio");
+  document.getElementById("tab-three").setAttribute("type","radio");
+
+  var x = document.getElementById("tab-one");
+    if(x.type === "radio"){
+      x.setAttribute("type","checkbox");
+    } else {
+      x.setAttribute("type","radio");
+    }
+
+}
+
+function function2(){
+  document.getElementById("tab-one").setAttribute("type","radio");
+  document.getElementById("tab-three").setAttribute("type","radio");
+  document.getElementById("tab-four").setAttribute("type","radio");
+
+
+  var x = document.getElementById("tab-two");
+    if(x.type === "radio"){
+      x.setAttribute("type","checkbox");
+    } else {
+      x.setAttribute("type","radio");
+    }
+
+}
+function function3(){
+  document.getElementById("tab-one").setAttribute("type","radio");
+  document.getElementById("tab-two").setAttribute("type","radio");
+  document.getElementById("tab-four").setAttribute("type","radio");
+
+  var x = document.getElementById("tab-three");
+    if(x.type === "radio"){
+      x.setAttribute("type","checkbox");
+    } else {
+      x.setAttribute("type","radio");
+    }
+
+}
+
+function function4(){
+  document.getElementById("tab-one").setAttribute("type","radio");
+  document.getElementById("tab-two").setAttribute("type","radio");
+  document.getElementById("tab-three").setAttribute("type","radio");
+
+
+  var x = document.getElementById("tab-four");
+    if(x.type === "radio"){
+      x.setAttribute("type","checkbox");
+    } else {
+      x.setAttribute("type","radio");
+    }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div style="height:50px;background-color:white;">
+<nav class="navbar transparent navbar-inverse navbar-fixed-top hr">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <img src="mm-logo.png" width="100px" height="52.6px" alt="Magic Moments" style="position:fixed;top:0%;left:0%;background-color:white;padding:0.1%;">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+<div class="abc1">
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right" style="font-family:Arial;">
+      <li class="active"><a href="#"><i class="fa fa-shopping-cart" style="font-size:20px;"aria-hidden="true"></i>&nbsp;&nbsp;Buy Tickets</a></li>
+      <li class="second"><a href="/profile"><i class="fa fa-user" style="font-size:20px;"aria-hidden="true"></i>&nbsp;&nbsp;User</a></li>
+<li class="second"><a href="/user"><i class="fa fa-home" style="font-size:20px;"aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
+<li class="second"><a href="" onclick="alert('Enter your location')"><i class="fa fa-map-marker" style="font-size:20px;"aria-hidden="true"></i>&nbsp;&nbsp;Location</a></li>     
+    </ul>
+</div>
+</div>
+  </div>
+</nav>
+</div>
+<div style="height:2vw;">
+</div>
+<div><span style="color:#202020;font-weight:bold;margin-left:2%;font-size:4.3vw;font-family:Arial;">Arijit Singh Concert</span><span style="margin-left:33.5%;"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size:3vw;color:#3b5998;"></i></a><span style="color:#F6F6F6;font-size:1vw;">Lor</span><a href="#"><i class="fa fa-twitter-square" aria-hidden="true" style="font-size:3vw;color:#0084b4;"></i></a><span style="color:#F6F6F6;font-size:1vw;">Lor</span><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true" style="font-size:3vw;color:#C92228;"></i></a><span style="color:#F6F6F6;font-size:1vw;">Lor</span><a href="#"><i class="fa fa-google-plus" aria-hidden="true" style="font-size:3vw;color:#d34836;"></i></a></span></div>
+<div style="margin-left:2%;font-family:Calibri Light;">
+<div style="display:inline-block;background-color:#F4F4F4;font-size:1vw;border-radius:0.8vw;color:#C0C0C0;border:0.08vw solid #E0E0E0;font-weight:bold;">&nbsp;&nbsp;Arijit Singh&nbsp;&nbsp;</div>
+<div style="display:inline-block;background-color:#F4F4F4;font-size:1vw;border-radius:0.8vw;color:#C0C0C0;border:0.08vw solid #E0E0E0;font-weight:bold;">&nbsp;&nbsp;Bangalore&nbsp;&nbsp;</div>
+<div style="display:inline-block;background-color:#F4F4F4;font-size:1vw;border-radius:0.8vw;color:#C0C0C0;border:0.08vw solid #E0E0E0;font-weight:bold;">&nbsp;&nbsp;19<sup>th</sup> March, 2024&nbsp;&nbsp;</div>
+
+</div>
+<div style="height:3vw;">
+</div>
+
+
+<div style="width:59.5vw;margin-right:4%;margin-left:40%;float:right;position:absolute;background-color:white;" class="">
+<div style="border-bottom:0.1vw solid #D8D8D8;">
+<div style="height:0.5vw;">
+</div>
+<div style="font-family:Arial Black;color:#2E90CC;margin-left:2%;font-size:2.5vw;">Your Billing Summary</div>
+<div style="height:1.5vw;">
+</div>
+<div style="font-family:Arial;color:black;margin-left:2%;font-size:1.3vw;">&nbsp;Tickets:<span style="float:right;margin-right:2%;">3 <i class="fa fa-ticket" aria-hidden="true" style="font-size:1.2vw;color:red;"></i></span></div>
+<div style="height:0.5vw;">
+</div>
+<div style="font-family:Arial;color:black;margin-left:2%;font-size:1.3vw;">&nbsp;Cost:<span style="float:right;margin-right:2%;"><i class="fa fa-inr" aria-hidden="true" style="font-size:1vw;color:black;"></i>&nbsp;3047</span></div>
+<div style="height:0.5vw;">
+</div>
+<div style="font-family:Arial;color:black;margin-left:2%;font-size:1.3vw;">&nbsp;Tax:<span style="float:right;margin-right:2%;">2%</span></div>
+<div style="height:0.5vw;">
+</div>
+<div style="font-family:Arial;color:black;margin-left:2%;font-size:1.3vw;">&nbsp;Discount:<span style="float:right;margin-right:2%;">5%</span></div>
+<div style="height:0.5vw;">
+</div>
+<div style="font-family:Arial;color:black;margin-left:2%;font-size:1.3vw;">&nbsp;Coupon code:<span style="float:right;margin-right:15%;"> <input type="text" style="width:28vw;height:2.3vw;margin-left:26.5%;margin-top:0%;"  id="pwd" placeholder="Code"></span></div>
+<div style="height:1.5vw;">
+</div>
+</div>
+<div style="height:0.5vw;">
+</div>
+
+
+<div style="font-family:Arial;color:black;margin-left:2%;font-weight:bold;font-size:1.3vw;">&nbsp;Final Cost:<span style="float:right;margin-right:2%;"><i class="fa fa-inr" aria-hidden="true" style="font-size:1vw;color:black;"></i>&nbsp;2894</span></div>
+<div style="height:1vw;">
+</div>
+<span>
+<a href="/payment" style="text-decoration:none;"><span style="text-align:center;background-color:#90EE90;width:38%;margin-left:57%;border-radius:0.2vw;color:white;font-size:1.5vw;padding:0.5vw 8vw 0.5vw 8vw;">PAY NOW</span></a>
+<div style="height:1vw;">
+</div>
+</div>
+
+<div style="height:32vw;overflow:scroll;width:38vw;">
+<div style="height:0.1vw;">
+</div>
+<div class="w3-card-2" style="width:34vw;margin-left:4%;background-color:#F9F9F9;">
+<div style="border-bottom:0.1vw solid #D8D8D8;background-color:white;">
+<div style="font-size:2.5vw;font-weight:bold;color:#BEBEBE;font-family:Arial;"><span style="margin-top:1%;margin-left:1%;">Gold</span><span style="color:#2E90CC;float:right;margin-right:4%;margin-top:-2.5%;"><i class="fa fa-inr" style="font-size:1.3vw;"aria-hidden="true"></i>&nbsp;<span style="font-size:1.5vw;">1499</span></span></div>
+<div style="height:1vw;">
+</div>
+<div style="margin-left:2%;font-family:Arial"><i class="fa fa-ticket" aria-hidden="true" style="font-size:1.2vw;color:red;"></i><span style="color:black;font-weight:bold;font-size:1.3vw;">&nbsp;Ticket: 1</span></div>
+<div style="height:1vw;">
+</div>
+</div>
+<div style="background-color:#2E90CC;color:white;text-align:center;width:30%;margin-left:34%;border-radius:0 0 0.3vw 0.3vw;font-family:Arial;font-size:1.2vw;">User details</div>
+<div style="height:1vw;">
+</div>
+<form>
+  <div class="form-group">
+   <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-envelope" style="font-size:1.2vw;color:#2E90CC;"aria-hidden="true"></i> Email:</div>
+    <input style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0;" type="email" id="email" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-phone" style="font-size:1.2vw;color:#2E90CC"aria-hidden="true"></i> Phone:</div>
+    <input type="text" style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0" id="pwd" placeholder="Phone">
+  </div>
+  
+</form>
+<div style="height:1vw;">
+</div>
+</div>
+<div style="height:2vw;">
+</div>
+<div class="w3-card-2" style="width:34vw;margin-left:4%;background-color:#F9F9F9;">
+<div style="border-bottom:0.1vw solid #D8D8D8;background-color:white;">
+<div style="font-size:2.5vw;font-weight:bold;color:#BEBEBE;font-family:Arial;"><span style="margin-top:1%;margin-left:1%;">Silver</span><span style="color:#2E90CC;float:right;margin-right:4%;margin-top:-2.5%;"><i class="fa fa-inr" style="font-size:1.3vw;"aria-hidden="true"></i>&nbsp;<span style="font-size:1.5vw;">999</span></span></div>
+<div style="height:1vw;">
+</div>
+<div style="margin-left:2%;font-family:Arial"><i class="fa fa-ticket" aria-hidden="true" style="font-size:1.2vw;color:red;"></i><span style="color:black;font-weight:bold;font-size:1.3vw;">&nbsp;Ticket: 1</span></div>
+<div style="height:1vw;">
+</div>
+</div>
+<div style="background-color:#2E90CC;color:white;text-align:center;width:30%;margin-left:34%;border-radius:0 0 0.3vw 0.3vw;font-family:Arial;font-size:1.2vw;">User details</div>
+<div style="height:1vw;">
+</div>
+<form>
+  <div class="form-group">
+   <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-envelope" style="font-size:1.2vw;color:#2E90CC;"aria-hidden="true"></i> Email:</div>
+    <input style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0;" type="email" id="email" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-phone" style="font-size:1.2vw;color:#2E90CC"aria-hidden="true"></i> Phone:</div>
+    <input type="text" style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0" id="pwd" placeholder="Phone">
+  </div>
+  
+</form>
+<div style="height:1vw;">
+</div>
+</div>
+<div style="height:2vw;">
+</div>
+<div class="w3-card-2" style="width:34vw;margin-left:4%;background-color:#F9F9F9;">
+<div style="border-bottom:0.1vw solid #D8D8D8;background-color:white;">
+<div style="font-size:2.5vw;font-weight:bold;color:#BEBEBE;font-family:Arial;"><span style="margin-top:1%;margin-left:1%;">Normal</span><span style="color:#2E90CC;float:right;margin-right:4%;margin-top:-2.5%;"><i class="fa fa-inr" style="font-size:1.3vw;"aria-hidden="true"></i>&nbsp;<span style="font-size:1.5vw;">549</span></span></div>
+<div style="height:1vw;">
+</div>
+<div style="margin-left:2%;font-family:Arial"><i class="fa fa-ticket" aria-hidden="true" style="font-size:1.2vw;color:red;"></i><span style="color:black;font-weight:bold;font-size:1.3vw;">&nbsp;Ticket: 1</span></div>
+<div style="height:1vw;">
+</div>
+</div>
+<div style="background-color:#2E90CC;color:white;text-align:center;width:30%;margin-left:34%;border-radius:0 0 0.3vw 0.3vw;font-family:Arial;font-size:1.2vw;">User details</div>
+<div style="height:1vw;">
+</div>
+<form>
+  <div class="form-group">
+   <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-envelope" style="font-size:1.2vw;color:#2E90CC;"aria-hidden="true"></i> Email:</div>
+    <input style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0;" type="email" id="email" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <div style="font-size:1.1vw;font-family:Arial;margin-left:2%;font-weight:bold;"><i class="fa fa-phone" style="font-size:1.2vw;color:#2E90CC"aria-hidden="true"></i> Phone:</div>
+    <input type="text" style="width:31.5vw;height:2.3vw;margin-left:2%;margin-top:0" id="pwd" placeholder="Phone">
+  </div>
+  
+</form>
+<div style="height:1vw;">
+</div>
+</div>
+
+<div style="height:1vw;">
+</div>
+</div>
+<div style="height:4vw;">
+</div>
+<div class="foot" style="position:absolute;width:100%;">
+
+    <div >
+      <div class="row hidden-xs" style="background-color:#E8E8E8">
+        <div class="col-sm-2" style="padding: 4% 0% 4% 6%">
+          <div class="">
+            <img src="mm-icon.jpg" alt="" style="height: auto; width: 90%">
+          </div>
+          <div>
+            <p style="font-weight:bold;font-size:1.3em;color:grey;padding: 5% 0 0 5%"></p>
+            <p></p>
+          </div>
+        </div>
+      <div class="col-sm-2" style="padding: 5% 0 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">CONTACT</p>
+           <div style="font-size:1.3em;color:grey">
+             <p>Email</p>
+             <p>Address</p>
+             <p>Mobile no.</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">AADARSH ARYA</p>
+           <div style="font-size:1.3em;color:grey">
+             <p>About</p>
+             <p>Careers</p>
+             <p>Help Center</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">LEGAL</p>
+           <div style="font-size:1.3em;color:grey">
+             <p>Terms</p>
+             <p>Privacy Policy</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">SOCIAL MEDIA</p>
+           <div style="font-size:1.3em;color:grey">
+             <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+             <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+             <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+             <p><i class="fa fa-linkedin-square social-icons" style="color:#0077b5"></i>LinkedIn</p>
+           </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="">
+      <div class="hidden-sm hidden-md hidden-lg">
+        <div class="tab blue">
+          <input class="inp" id="tab-one" type="radio" name="tabs2" onclick="function1()">
+          <label for="tab-one">CONTACT</label>
+          <div class="tab-content">
+            <p>Email</p>
+            <p>Address</p>
+            <p>Mobile no.</p>
+           </div>
+        </div>
+          <div class="tab blue">
+            <input class="inp" id="tab-two" type="radio" name="tabs2" onclick="function2()">
+            <label for="tab-two">HEYMEDY</label>
+            <div class="tab-content">
+              <p>About</p>
+              <p>Careers</p>
+            </div>
+        </div>
+          <div class="tab blue">
+            <input class="inp" id="tab-three" type="radio" name="tabs2" onclick="function3()">
+            <label for="tab-three">LEGAL</label>
+            <div class="tab-content">
+              <p>Terms</p>
+              <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="tab blue">
+          <input class="inp" id="tab-four" type="radio" name="tabs2" onclick="function4()">
+          <label for="tab-four">SOCIAL MEDIA</label>
+          <div class="tab-content">
+            <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+            <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+            <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div >
+     <div class="hidden-xs hidden-sm" style="background-color:white;">
+       <div class="footer">
+         <div class="row">
+           <div class="col-sm-6">
+             <p style="padding: 3% 0% 0% 10%">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+           </div>
+           <div class="col-sm-6">
+             <a href="" style="text-decoration:none;color:#757575"><p style="padding: 3% 0% 0% 45%">Copyrights &copy; 2024 Aadarsh Arya</p></a>
+           </div>
+         </div>
+         </div>
+       </div>
+    </div>
+    <div class="hidden-lg hidden-md hidden-xs" style="background-color:white;">
+      <div class="footer-sm" >
+        <div class="text-center" style="padding-top: 10px">
+            <p style="padding-top: 0px">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+            <a href="" style="text-decoration:none;color:#757575"><p style="margin-top: -10px">Copyrights &copy; 2024 Aadarsh Arya</p></a>
+          </div>
+      </div>
+    </div>
+    <div >
+     <div class="hidden-lg hidden-md hidden-sm" style="background-color:white;">
+          <div class="footer-xs">
+            <p style="margin-bottom: -10px;padding-top: 5px">Made with <i class="fa fa-heart" style="color: #F44336;;font-size:0.9em"></i>, in India<br>Copyrights &copy; 2024 Aadarsh Arya </p>
+          </div>
+      </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>

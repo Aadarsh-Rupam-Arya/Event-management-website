@@ -1,0 +1,366 @@
+
+
+ 
+@media (max-width: 765px) {
+   
+    .navbar-toggle {
+        display: block;
+        background-color:#D3D3D3;
+        
+    }
+    .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .navbar-collapse.collapse {
+        display:toggle;
+    }
+    .navbar-nav {
+        float: none;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+.navbar-inverse .navbar-nav > .active > a{
+color:white;
+background:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .active > a:hover{
+color:white;
+background:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .second > a:hover{
+color:white;
+background:#D0D0D0;
+}
+.navbar-inverse .navbar-nav > .second > a{
+color:black;
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .third > a:hover{
+color:white;
+background:#2E90CC;
+}
+.third{
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .fourth > a:hover{
+color:white;
+background:#2E90CC;
+}
+.fourth{
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .fifth > a:hover{
+color:white;
+background:#2E90CC;
+}
+
+.fifth{
+background:white;
+}
+
+}
+
+@media (min-width: 765.1px)
+{
+.navbar .container-fluid .abc1 .navbar-collapse .navbar-nav .second:hover,.navbar .container-fluid .abc1 .navbar-collapse .navbar-nav .second:focus{
+background-color:red;
+color:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .second > a{
+color:white;
+}
+
+ .navbar-inverse .navbar-nav > .active > a, 
+ .navbar-inverse .navbar-nav > .active > a:hover, 
+ .navbar-inverse .navbar-nav > .active > a:focus {
+      color: black;
+      background-color:white;
+ }
+
+
+}
+
+.navbar {
+   background-color: #2E90CC;
+   background: #2E90CC;
+   border-color: transparent;
+   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.carousel .item{
+  height:40vw;
+}
+
+.container{
+width:102.5vw;
+margin-left:-14.7px;
+}
+.icon:hover{
+color:white;
+}
+.icon:focus{
+color:red;
+}
+.icon{
+color:#2E90CC;
+}
+body{
+overflow-x:hidden;
+overflow-y:hidden;
+}
+.card2{
+position:absolute;
+top:0%;
+left:140%;
+}
+#news-image { 
+  width:30%; 
+  height: 140px; 
+ 
+  background-size:cover; 
+ 
+  filter: brightness(60%); 
+  z-index:1; 
+ 
+}
+
+
+.footer
+{
+width:100%;
+height:10%;
+background-color:#FFFFFF;
+}
+.image4
+{
+border-radius:5px 5px 0px 0px;
+}
+.space
+{
+position:absolute;
+top:305%;
+width:100%;
+height:3%;
+}
+.text
+{
+position:absolute;
+top:23%;
+left:3%;
+font-size:26px;
+color:#218289;
+}
+.image
+{
+background:url("abc.jpg");
+background-size:100% 100%;
+height:15vw;
+}
+.color {
+  width:100%;
+  height:100%;
+ background: rgba(0,204,0,0.6);
+  color:#FFFFFF;
+}
+.tint1{
+ background:url("abc.jpg");
+    background-size: 100%; 
+    height:15vw;
+        border-radius:5px;
+    background-attachment:fixed;
+}
+.tint {
+
+ height: 100%;
+width: 21.51%;
+position: absolute;
+top: 0px;
+left: 0px;
+background: rgba(0,204,0,0.6); 
+border-radius:5px;   
+}
+.tint2{
+ background:url("Pills.jpg");
+    background-size: 100%;
+    height:15vw;
+    border-radius:5px;
+}
+.tint3 {
+
+ height: 100%;
+width: 21.51%;
+position: absolute;
+top: 0px;
+left: 0px;
+background: rgba(51,51,255,0.5); 
+border-radius:5px;   
+}
+.whitecontent {
+ color: white;
+}
+.load1:hover{
+color:white;
+}
+
+.w3-card-4:hover
+{
+box-shadow: 5px 12px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); 
+cursor:pointer;
+}
+
+.footer-sm{
+  background-color:white;
+  color: #757575;
+  width: 102%;
+  height: 80px;
+  margin-left: 0px;
+}
+.footer-xs{
+  background-color:white;
+  color: #757575;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  text-align: center;
+}
+.panel-heading h3{
+  font-weight:bold;
+  font-size:1.1em;
+  color:grey;
+}
+.panel-body p{
+  color: grey;
+  font-size:1.2em;
+  padding-left: 20px;
+}
+.tab {
+  position: relative;
+  margin-bottom: -4px;
+  width: 100%;
+  color: #757575;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #16a085;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+.blue label {
+  background: #E8E8E8;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #1abc9c;
+
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.blue .tab-content {
+  background: white;
+}
+.tab-content p {
+  color: grey;
+  font-size:1.1em;
+  padding-left: 20px;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+.social-icons{
+  font-size: 1.4em;
+  padding: 4px;
+}
+.loading{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: white;
+  z-index: 2;
+}
+.loading-image{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.floating-button{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+.query-box{
+  background-color: white;
+  width: 350px;
+  height: 50px;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 3;
+  border-radius: 25px;
+  padding-left: auto;
+}
+*:focus {
+    outline: none;
+}
+@media screen and (max-width: 480px) {
+    .query-box {
+      width: 300px;
+    }
+}
+.rotate{
+  transform: rotate(180deg);
+}
+

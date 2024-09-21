@@ -1,0 +1,214 @@
+
+@media (max-width: 765px) {
+   
+    .navbar-toggle {
+        display: block;
+        background-color:#D3D3D3;
+        
+    }
+    .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .navbar-collapse.collapse {
+        display:toggle;
+    }
+    .navbar-nav {
+        float: none;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+.navbar-inverse .navbar-nav > .active > a{
+color:white;
+background:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .active > a:hover{
+color:white;
+background:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .second > a:hover{
+color:white;
+background:#D0D0D0;
+}
+.navbar-inverse .navbar-nav > .second > a{
+color:black;
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .third > a:hover{
+color:white;
+background:#2E90CC;
+}
+.third{
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .fourth > a:hover{
+color:white;
+background:#2E90CC;
+}
+.fourth{
+background-color:white;
+}
+.navbar-inverse .navbar-nav > .fifth > a:hover{
+color:white;
+background:#2E90CC;
+}
+
+.fifth{
+background:white;
+}
+
+}
+
+@media (min-width: 765.1px)
+{
+.navbar .container-fluid .abc1 .navbar-collapse .navbar-nav .second:hover,.navbar .container-fluid .abc1 .navbar-collapse .navbar-nav .second:focus{
+background-color:red;
+color:#2E90CC;
+}
+.navbar-inverse .navbar-nav > .second > a{
+color:white;
+}
+
+ .navbar-inverse .navbar-nav > .active > a, 
+ .navbar-inverse .navbar-nav > .active > a:hover, 
+ .navbar-inverse .navbar-nav > .active > a:focus {
+      color: black;
+      background-color:white;
+ }
+
+
+}
+
+.navbar {
+   background-color: #2E90CC;
+   background: #2E90CC;
+   border-color: transparent;
+   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+        
+        body{
+        overflow-x:hidden;
+        overflow-y:hidden;
+        }
+        .form2
+        {
+        width:25vw;
+        position:absolute;
+        top:5.7vw;
+        left:3.2vw;
+        }
+        .icon1
+        {
+        position:absolute;
+        top:4.8vw;
+        left:2.8vw;
+        }
+        .form3
+        {
+        width:25vw;
+        position:absolute;
+        top:11.2vw;
+        left:14vw;
+        }
+        .icon2
+        {
+        position:absolute;
+        top:12.7vw;
+        left:2.8vw;
+        }
+       
+        .login
+        {
+        
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color:#FFFFFF;
+        border-radius:5px;
+        
+        }
+        
+        
+        ::-webkit-input-placeholder {
+           font-size: 1.5vw!important;
+        color:#B0B0B0;
+        }
+        
+        :-moz-placeholder {
+              font-size: 1.5vw!important;
+        color:#B0B0B0;
+        }
+        ::-moz-placeholder {
+              font-size: 1.5vw!important;
+        color:#B0B0B0;
+        }
+
+
+        .container {
+            max-width: 80vw;
+            margin: 0 auto;
+            padding: 5vw;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-picture {
+            width: 15vw;
+            height: 15vw;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 5vw;
+            position: absolute;
+            top: 8vw;
+            left: 3vw;
+        }
+        
+        #profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .user-details {
+            flex-grow: 1;
+            width: 35vw;
+            position: absolute;
+            top: 6.7vw;
+            left: 19.2vw;
+        }
+        
+        .user-details h2 {
+            margin-top: 0;
+        }
+        
+        button {
+            padding: 0.6vw 1.3vw;
+            background-color: #2E90CC;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 16vw;
+            left: 4.2vw;
+        }
+
+        
+        
+        
+
+        button:hover {
+            background-color: #1E70AD;
+        }
+
+           
+        
+        
+
