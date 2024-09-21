@@ -6,7 +6,9 @@ const { MongoClient } = require("mongodb");
 const app = express();
 const port = 3010;
 
-const uri = "mongodb://localhost:27017";
+// const uri = "mongodb://localhost:27017";
+const uri = "mongodb+srv://aadarsharya10:3105Aadi%23@cluster0.q0ilc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 
 const dbName = "Magic_Moments";
 
